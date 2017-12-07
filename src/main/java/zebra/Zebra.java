@@ -12,11 +12,11 @@ public class Zebra {
     public static void main(final String[] args) {
         final Model m = new Model();
 
-        final IntVar[] color = m.intVarArray("color", 5, 0, 4, true); // red, blue, yellow, green ivory
-        final IntVar[] cigarette = m.intVarArray("cigarette", 5, 0, 4, true); // oldGold, Parli, Kools, Lucky, Chest
-        final IntVar[] nationality = m.intVarArray("nationality", 5, 0, 4, true); // Norge, Ukr, Eng, Spain, Jap
-        final IntVar[] pet = m.intVarArray("pet", 5, 0, 4, true); // zebra, dog, horse, fox, snails
-        final IntVar[] drink = m.intVarArray("drink", 5, 0, 4, true); // coffee, tea, h2o, milk, oj
+        final IntVar[] color = m.intVarArray("color", 5, 0, 4);
+        final IntVar[] cigarette = m.intVarArray("cigarette", 5, 0, 4);
+        final IntVar[] nationality = m.intVarArray("nationality", 5, 0, 4);
+        final IntVar[] pet = m.intVarArray("pet", 5, 0, 4);
+        final IntVar[] drink = m.intVarArray("drink", 5, 0, 4);
 
         final String[] colorNames = { "Red", "Blue", "Yellow", "Green", "Ivory" };
         final IntVar red = color[0];
@@ -80,7 +80,6 @@ public class Zebra {
         System.out.println("Water is drunk by the " + nationalityNames[h2o.getValue()]);
         System.out.println("The zebra is owned by the " + nationalityNames[zebra.getValue()]);
         System.out.println();
-        System.out.println("| House        |       1      |       2      |       3      |       4      |       5      |");
 
         printRow("Color", color, colorNames);
         printRow("Nationality", nationality, nationalityNames);
