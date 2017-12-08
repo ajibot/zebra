@@ -2,7 +2,7 @@
 
 Java implementation of the [Zebra Puzzla](https://en.wikipedia.org/wiki/Zebra_Puzzle)
 
-Constraint satisfaction using the [Choco Solver](http://www.choco-solver.org/)
+Mini constraint satisfaction library inspired by the [Choco Solver](http://www.choco-solver.org/)
 
 Based on <http://www.dcs.gla.ac.uk/~pat/jchoco/zebra/Zebra.java>
 
